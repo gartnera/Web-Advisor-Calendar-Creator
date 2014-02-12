@@ -1,0 +1,11 @@
+{
+    "name": "WebAdvisor Calendar Creator",
+	"description": "This adds a Generate Calendar button to the class schedule section.\nSend bug reports to alex@agartner.com. Include the HTML of the schedule page, the ICS file generated, and a summary of the desired results.",
+    "manifest_version": 2,
+	"version": "0.1",
+    "content_scripts": [{
+        "js": ["contentscript.js"],
+        "matches": ["https://wa-dsu.prod.sdbor.edu/WebAdvisor/*"]
+    }],
+	"web_accessible_resources": ["script.js"]
+}
